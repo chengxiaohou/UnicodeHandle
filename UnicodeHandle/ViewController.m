@@ -7,13 +7,11 @@
 //
 
 #import "ViewController.h"
-
+#import "NSString+unicode.h"
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    // Do any additional setup after loading the view.
 }
 
 
@@ -23,5 +21,11 @@
     // Update the view, if already loaded.
 }
 
+- (IBAction)onGoBtn:(id)sender {
+    
+    NSMutableAttributedString *att = [[NSMutableAttributedString alloc] initWithAttributedString:_leftView.attributedString];
+    [att replaceCharactersInRange:NSMakeRange(0, att.string.length) withString:[_leftView.textStorage.string unicodeString]];
+    [_rightView.textStorage setAttributedString:att];
+}
 
 @end

@@ -10,6 +10,8 @@
 
 @interface ViewController : NSViewController
 
+@property (unsafe_unretained) IBOutlet NSTextView *leftView;
+@property (unsafe_unretained) IBOutlet NSTextView *rightView;
 
 @end
 

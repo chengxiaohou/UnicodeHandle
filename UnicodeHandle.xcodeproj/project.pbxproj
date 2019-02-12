@@ -12,10 +12,11 @@
 		54459FF222126A4900F50455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54459FF122126A4900F50455 /* Assets.xcassets */; };
 		54459FF522126A4900F50455 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54459FF322126A4900F50455 /* Main.storyboard */; };
 		54459FF822126A4900F50455 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54459FF722126A4900F50455 /* main.m */; };
+		5445A00122126A6300F50455 /* NSString+unicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54459FFF22126A6200F50455 /* NSString+unicode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		54459FE822126A4800F50455 /* UnicodeHandle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnicodeHandle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54459FE822126A4800F50455 /* 编码转换.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "编码转换.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54459FEB22126A4800F50455 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		54459FEC22126A4800F50455 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		54459FEE22126A4800F50455 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -25,6 +26,8 @@
 		54459FF622126A4900F50455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54459FF722126A4900F50455 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		54459FF922126A4900F50455 /* UnicodeHandle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UnicodeHandle.entitlements; sourceTree = "<group>"; };
+		54459FFF22126A6200F50455 /* NSString+unicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+unicode.m"; sourceTree = "<group>"; };
+		5445A00022126A6300F50455 /* NSString+unicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+unicode.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +52,7 @@
 		54459FE922126A4800F50455 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				54459FE822126A4800F50455 /* UnicodeHandle.app */,
+				54459FE822126A4800F50455 /* 编码转换.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,6 +60,8 @@
 		54459FEA22126A4800F50455 /* UnicodeHandle */ = {
 			isa = PBXGroup;
 			children = (
+				5445A00022126A6300F50455 /* NSString+unicode.h */,
+				54459FFF22126A6200F50455 /* NSString+unicode.m */,
 				54459FEB22126A4800F50455 /* AppDelegate.h */,
 				54459FEC22126A4800F50455 /* AppDelegate.m */,
 				54459FEE22126A4800F50455 /* ViewController.h */,
@@ -87,7 +92,7 @@
 			);
 			name = UnicodeHandle;
 			productName = UnicodeHandle;
-			productReference = 54459FE822126A4800F50455 /* UnicodeHandle.app */;
+			productReference = 54459FE822126A4800F50455 /* 编码转换.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -142,6 +147,7 @@
 				54459FF022126A4800F50455 /* ViewController.m in Sources */,
 				54459FF822126A4900F50455 /* main.m in Sources */,
 				54459FED22126A4800F50455 /* AppDelegate.m in Sources */,
+				5445A00122126A6300F50455 /* NSString+unicode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +290,7 @@
 					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fengyi.UnicodeHandle;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "编码转换";
 			};
 			name = Debug;
 		};
@@ -302,7 +308,7 @@
 					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fengyi.UnicodeHandle;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "编码转换";
 			};
 			name = Release;
 		};
