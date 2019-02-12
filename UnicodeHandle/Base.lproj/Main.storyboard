@@ -684,7 +684,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="编码转换" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
@@ -706,34 +706,587 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="599" height="363"/>
+                        <rect key="frame" x="0.0" y="0.0" width="491" height="312"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tWO-AG-L1D">
-                                <rect key="frame" x="271" y="2" width="58" height="32"/>
-                                <buttonCell key="cell" type="push" title="Go" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="MGI-H8-UbR">
+                                <rect key="frame" x="199" y="2" width="94" height="32"/>
+                                <buttonCell key="cell" type="push" title="编码转换" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="MGI-H8-UbR">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="onGoBtn:" target="XfG-lQ-9wD" id="HIA-Bb-8qz"/>
                                 </connections>
                             </button>
                             <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUP-U9-dSu">
-                                <rect key="frame" x="0.0" y="38" width="300" height="325"/>
+                                <rect key="frame" x="0.0" y="38" width="246" height="274"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="SIh-kx-z88">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="325"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="246" height="274"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="6Rl-3f-L6m">
-                                            <rect key="frame" x="0.0" y="0.0" width="300" height="325"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="246" height="9516"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" red="0.96862999999999999" green="0.80017000000000005" blue="0.15595000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="300" height="325"/>
+                                            <size key="minSize" width="246" height="274"/>
                                             <size key="maxSize" width="480" height="10000000"/>
                                             <attributedString key="textStorage">
-                                                <fragment content="\U7269\U8054\U7f51\U7f51\U5173">
+                                                <fragment>
+                                                    <mutableString key="content">{
+    msg = OK;
+    result =     (
+                {
+            actions =             (
+                "/ctrl/set_match_mode",
+                "/ctrl/scene/invoke",
+                "/ctrl/scene/update",
+                "/ctrl/reboot",
+                "/ctrl/diagnose",
+                "/ctrl/turn_on_light",
+                "/ctrl/turn_off_light",
+                "/ctrl/diagnose_feedback",
+                "/event/offline"
+            );
+            "adapt_min_version" = "1.0.0";
+            attrs =             (
+                "NGT_LGT"
+            );
+            category = "\U7269\U8054\U7f51\U7f51\U5173";
+            "category_id" = 100;
+            "connect_mode" = direct;
+            "firmware_comm" = "";
+            "firmware_type" = "";
+            icon = "/product/201612/1609/419p97pr56y7.png";
+            id = 1001;
+            lang = "zh-cn";
+            layer = 1;
+            name = "\U7269\U8054\U7f51\U7f51\U5173";
+            "product_model" = "";
+            sort = 0;
+            tags =             (
+            );
+            version = "";
+        },
+                {
+            "adapt_min_version" = "";
+            category = "\U7269\U8054\U7f51\U6307\U7eb9\U9501";
+            "category_id" = 520;
+            "connect_mode" = direct;
+            "firmware_comm" = "";
+            "firmware_type" = "";
+            icon = "/product/201710/1909/0.jpg";
+            id = 2010;
+            lang = "zh-cn";
+            layer = "4,1";
+            name = "\U7269\U8054\U7f51\U6307\U7eb9\U9501";
+            "product_model" = W200;
+            sort = 0;
+            tags =             (
+            );
+            version = "";
+        },
+                {
+            "adapt_min_version" = "";
+            category = "\U7269\U8054\U7f51\U6307\U7eb9\U9501";
+            "category_id" = 520;
+            "connect_mode" = direct;
+            "firmware_comm" = "";
+            "firmware_type" = "";
+            icon = "/product/201712/1315/2011.jpg";
+            id = 2011;
+            lang = "zh-cn";
+            layer = "4,1";
+            name = "\U7269\U8054\U7f51\U6307\U7eb9\U9501";
+            "product_model" = W400;
+            sort = 0;
+            tags =             (
+            );
+            version = "";
+        },
+                {
+            "adapt_min_version" = "1.0.0";
+            attrs =             (
+                ROLL
+            );
+            category = "\U7269\U8054\U7f51\U7a97\U5e18";
+            "category_id" = 550;
+            "connect_mode" = central;
+            "firmware_comm" = "";
+            "firmware_type" = "";
+            icon = "/product/201612/1609/x4gqqfh9ob9.png";
+            id = 2702;
+            lang = "zh-cn";
+            layer = "4,1";
+            name = "\U7269\U8054\U7f51\U5377\U5e18";
+            "product_model" = "";
+            sort = 0;
+            tags =             (
+            );
+            version = "";
+        },
+                {
+            "adapt_min_version" = "";
+            category = "\U7269\U8054\U7f51\U7a97\U5e18";
+            "category_id" = 550;
+            "connect_mode" = central;
+            "firmware_comm" = "";
+            "firmware_type" = "";
+            icon = "/product/201707/1710/489ioa8uvydn.png";
+            id = 2703;
+            lang = "zh-cn";
+            layer = "4,1";
+            name = "\U7269\U8054\U7f51\U5f00\U5408\U5e18";
+            "product_model" = "";
+            sort = 0;
+            tags =             (
+            );
+            version = "";
+        },
+                {
+            "adapt_min_version" = "";
+            attrs =             (
+                ROLL
+            );
+            category = "\U7269\U8054\U7f51\U7a97\U5e18";
+            "category_id" = 550;
+            "connect_mode" = central;
+            "firmware_comm" = "";
+            "firmware_type" = "";
+            icon = "/product/201707/1710/6lxwpecbdco1.png";
+            id = 2704;
+            lang = "zh-cn";
+            layer = "4,1";
+            name = "\U7269\U8054\U7f51\U5377\U5e18";
+            "product_model" = "";
+            sort = 0;
+            tags =             (
+            );
+            version = "";
+        },
+                {
+            actions =             (
+                "/ctrl/set_mode",
+                "/ctrl/set_hue_h",
+                "/ctrl/set_hue_bris",
+                "/ctrl/set_white_bris",
+                "/ctrl/set_white_ct"
+            );
+            "adapt_min_version" = "1.0.0";
+            category = "\U7269\U8054\U7f51\U7167\U660e";
+            "category_id" = 560;
+            "connect_mode" = central;
+            "firmware_comm" = "";
+            "firmware_type" = "";
+            icon = "/product/201612/1611/y8v287ikrqo.png";
+            id = 2800;
+            lang = "zh-cn";
+            layer = "4,1";
+            name = "\U7269\U8054\U7f51\U5f69\U5149\U706f";
+            "product_model" = "";
+            sort = 0;
+            tags =             (
+            );
+            version = "";
+        },
+                {
+            actions =             (
+                "/ctrl/set_white_bris",
+                "/ctrl/set_white_ct"
+            );
+            "adapt_min_version" = "1.0.0";
+            attrs =             (
+                "WHT_LGT"
+            );
+            category = "\U7269\U8054\U7f51\U7167\U660e";
+            "category_id" = 560;
+            "connect_mode" = central;
+            "firmware_comm" = "";
+            "firmware_type" = "";
+            icon = "/product/201612/1611/5rerl3f946ov.png";
+            id = 2801;
+            lang = "zh-cn";
+            layer = "4,1";
+            name = "\U7269\U8054\U7f51\U767d\U5149\U706f";
+            "product_model" = "";
+            sort = 0;
+            tags =             (
+            );
+            version = "";
+        },
+                {
+            actions =             (
+                "/ctrl/set_white_bris",
+                "/ctrl/set_white_ct",
+                "/ctrl/set_hue_bris",
+                "/ctrl/set_hue_h",
+                "/ctrl/set_mode"
+            );
+            "adapt_min_version" = "1.0.0";
+            category = "\U7269\U8054\U7f51\U7167\U660e";
+            "category_id" = 560;
+            "connect_mode" = central;
+            "firmware_comm" = "";
+            "firmware_type" = "";
+            icon = "/product/201612/1611/xgsr3y74kj.png";
+            id = 2802;
+            lang = "zh-cn";
+            layer = "4,1";
+            name = "\U7269\U8054\U7f51\U706f\U5e26";
+            "product_model" = "";
+            sort = 0;
+            tags =             (
+            );
+            version = "";
+        },
+                {
+            actions =             (
+                "/ctrl/set_mode",
+                "/ctrl/set_hue_h",
+                "/ctrl/set_hue_bris",
+                "/ctrl/set_white_bris",
+                "/ctrl/set_white_ct"
+            );
+            "adapt_min_version" = "1.0.0";
+            category = "\U7269\U8054\U7f51\U7167\U660e";
+            "category_id" = 560;
+            "connect_mode" = central;
+            "firmware_comm" = "";
+            "firmware_type" = "";
+            icon = "/product/201612/1611/8b1vkm5wo4pd.png";
+            id = 2803;
+            lang = "zh-cn";
+            layer = "4,1";
+            name = "\U7269\U8054\U7f51\U706f\U5e26";
+            "product_model" = "";
+            sort = 0;
+            tags =             (
+            );
+            version = "";
+        },
+                {
+            "adapt_min_version" = "1.0.0";
+            category = "\U7269\U8054\U7f51\U732b\U773c";
+            "category_id" = 570;
+            "connect_mode" = direct;
+            "firmware_comm" = "";
+            "firmware_type" = "";
+            icon = "/product/201707/0617/463ghgn4k4az.png";
+            id = 2603;
+            lang = "zh-cn";
+            layer = "4,1";
+            name = "\U7269\U8054\U7f51\U732b\U773c";
+            "product_model" = "M100 Pro";
+            sort = 0;
+            tags =             (
+            );
+            version = "";
+        },
+                {
+            "adapt_min_version" = "";
+            category = "\U7269\U8054\U7f51\U732b\U773c";
+            "category_id" = 570;
+            "connect_mode" = direct;
+            "firmware_comm" = "";
+            "firmware_type" = "";
+            icon = "/product/201805/1114/0.jpg";
+            id = 2604;
+            lang = "zh-cn";
+            layer = "4,1";
+            name = "\U7269\U8054\U7f51\U732b\U773c";
+            "product_model" = S200;
+            sort = 0;
+            tags =             (
+            );
+            version = "";
+        },
+                {
+            "adapt_min_version" = "";
+            category = "\U7269\U8054\U7f51\U732b\U773c";
+            "category_id" = 570;
+            "connect_mode" = direct;
+            "firmware_comm" = "";
+            "firmware_type" = "";
+            icon = "/product/201805/2318/2605.jpg";
+            id = 2605;
+            lang = "zh-cn";
+            layer = "4,1";
+            name = "\U7269\U8054\U7f51\U732b\U773c";
+            "product_model" = "S200 pro";
+            sort = 0;
+            tags =             (
+            );
+            version = "";
+        },
+                {
+            "adapt_min_version" = "";
+            category = "\U7269\U8054\U7f51\U732b\U773c";
+            "category_id" = 570;
+            "connect_mode" = direct;
+            "firmware_comm" = "";
+            "firmware_type" = "";
+            icon = "/product/201805/2318/2606.jpg";
+            id = 2606;
+            lang = "zh-cn";
+            layer = "4,1";
+            name = "\U7269\U8054\U7f51\U732b\U773c";
+            "product_model" = M200;
+            sort = 0;
+            tags =             (
+            );
+            version = "";
+        },
+                {
+            "adapt_min_version" = "";
+            category = "\U7269\U8054\U7f51\U732b\U773c";
+            "category_id" = 570;
+            "connect_mode" = direct;
+            "firmware_comm" = "";
+            "firmware_type" = "";
+            icon = "/product/201808/2816/2607.jpg";
+            id = 2607;
+            lang = "zh-cn";
+            layer = "4,1";
+            name = "\U7269\U8054\U7f51\U732b\U773c";
+            "product_model" = "S200 Pro";
+            sort = 0;
+            tags =             (
+            );
+            version = "";
+        },
+                {
+            "adapt_min_version" = "";
+            category = "\U7269\U8054\U7f51\U732b\U773c";
+            "category_id" = 570;
+            "connect_mode" = direct;
+            "firmware_comm" = "";
+            "firmware_type" = "";
+            icon = "/product/201812/0620/2608.jpg";
+            id = 2608;
+            lang = "zh-cn";
+            layer = "4,1";
+            name = "\U7269\U8054\U7f51\U732b\U773c";
+            "product_model" = "YW-UEE-S200";
+            sort = 0;
+            tags =             (
+            );
+            version = "";
+        },
+                {
+            "adapt_min_version" = "";
+            category = "\U7269\U8054\U7f51\U732b\U773c";
+            "category_id" = 570;
+            "connect_mode" = direct;
+            "firmware_comm" = "";
+            "firmware_type" = "";
+            icon = "/product/201812/0620/2612.jpg";
+            id = 2612;
+            lang = "zh-cn";
+            layer = "4,1";
+            name = "\U7269\U8054\U7f51\U732b\U773c";
+            "product_model" = M200;
+            sort = 0;
+            tags =             (
+            );
+            version = "";
+        },
+                {
+            "adapt_min_version" = "";
+            category = "\U7269\U8054\U7f51\U95e8";
+            "category_id" = 580;
+            "connect_mode" = direct;
+            "firmware_comm" = "";
+            "firmware_type" = "";
+            icon = "/product/201807/2510/2901.jpg";
+            id = 2901;
+            lang = "zh-cn";
+            layer = "4,1";
+            name = "\U7269\U8054\U7f51\U638c\U9759\U8109\U95e8";
+            "product_model" = D100;
+            sort = 0;
+            tags =             (
+            );
+            version = "";
+        },
+                {
+            "adapt_min_version" = "";
+            attrs =             (
+                "FP_INPUT_4",
+                "BT_LOCK"
+            );
+            category = "\U7269\U8054\U7f51\U4e91\U9501\U65b9\U6848";
+            "category_id" = 2000;
+            "connect_mode" = direct;
+            "firmware_comm" = "";
+            "firmware_type" = "";
+            icon = "/product/201808/1611/6002.jpg";
+            id = 6002;
+            lang = "zh-cn";
+            layer = 1;
+            name = "\U7269\U8054\U7f51\U6307\U7eb9\U9501";
+            "product_model" = E700A;
+            sort = 0;
+            tags =             (
+            );
+            version = "";
+        },
+                {
+            "adapt_min_version" = "";
+            attrs =             (
+                "FP_INPUT_6",
+                "BT_LOCK"
+            );
+            category = "\U7269\U8054\U7f51\U4e91\U9501\U65b9\U6848";
+            "category_id" = 2000;
+            "connect_mode" = direct;
+            "firmware_comm" = "";
+            "firmware_type" = "";
+            icon = "/product/201808/1611/6003.jpg";
+            id = 6003;
+            lang = "zh-cn";
+            layer = 1;
+            name = "\U7269\U8054\U7f51\U6307\U7eb9\U9501";
+            "product_model" = V700;
+            sort = 0;
+            tags =             (
+            );
+            version = "";
+        },
+                {
+            "adapt_min_version" = "";
+            attrs =             (
+                "FP_INPUT_6",
+                "BT_LOCK"
+            );
+            category = "\U7269\U8054\U7f51\U4e91\U9501\U65b9\U6848";
+            "category_id" = 2000;
+            "connect_mode" = direct;
+            "firmware_comm" = "";
+            "firmware_type" = "";
+            icon = "/product/201808/1611/6004.jpg";
+            id = 6004;
+            lang = "zh-cn";
+            layer = 1;
+            name = "\U7269\U8054\U7f51\U6307\U7eb9\U9501";
+            "product_model" = 9000A;
+            sort = 0;
+            tags =             (
+            );
+            version = "";
+        },
+                {
+            "adapt_min_version" = "";
+            attrs =             (
+                "FP_INPUT_4",
+                "BT_LOCK"
+            );
+            category = "\U7269\U8054\U7f51\U4e91\U9501\U65b9\U6848";
+            "category_id" = 2000;
+            "connect_mode" = direct;
+            "firmware_comm" = "";
+            "firmware_type" = "";
+            icon = "/product/201809/0517/6005.jpg";
+            id = 6005;
+            lang = "zh-cn";
+            layer = 1;
+            name = "\U7269\U8054\U7f51\U6307\U7eb9\U9501";
+            "product_model" = L601;
+            sort = 0;
+            tags =             (
+            );
+            version = "";
+        },
+                {
+            "adapt_min_version" = "";
+            attrs =             (
+                "FP_INPUT_4",
+                "BT_LOCK"
+            );
+            category = "\U7269\U8054\U7f51\U4e91\U9501\U65b9\U6848";
+            "category_id" = 2000;
+            "connect_mode" = direct;
+            "firmware_comm" = "";
+            "firmware_type" = "";
+            icon = "/product/201809/0518/6006.jpg";
+            id = 6006;
+            lang = "zh-cn";
+            layer = 1;
+            name = "\U7269\U8054\U7f51\U6307\U7eb9\U9501";
+            "product_model" = V7900;
+            sort = 0;
+            tags =             (
+            );
+            version = "";
+        },
+                {
+            "adapt_min_version" = "";
+            attrs =             (
+                "FP_INPUT_6",
+                "BT_LOCK"
+            );
+            category = "\U7269\U8054\U7f51\U4e91\U9501\U65b9\U6848";
+            "category_id" = 2000;
+            "connect_mode" = direct;
+            "firmware_comm" = "";
+            "firmware_type" = "";
+            icon = "/product/201810/1209/6007.jpg";
+            id = 6007;
+            lang = "zh-cn";
+            layer = 1;
+            name = "\U7269\U8054\U7f51\U6307\U7eb9\U9501";
+            "product_model" = D5S;
+            sort = 0;
+            tags =             (
+            );
+            version = "";
+        },
+                {
+            "adapt_min_version" = "";
+            attrs =             (
+                "FP_INPUT_4",
+                "BT_LOCK"
+            );
+            category = "\U7269\U8054\U7f51\U4e91\U9501\U65b9\U6848";
+            "category_id" = 2000;
+            "connect_mode" = direct;
+            "firmware_comm" = "";
+            "firmware_type" = "";
+            icon = "/product/201810/1209/6008.jpg";
+            id = 6008;
+            lang = "zh-cn";
+            layer = 1;
+            name = "\U7269\U8054\U7f51\U6307\U7eb9\U9501";
+            "product_model" = DS803;
+            sort = 0;
+            tags =             (
+            );
+            version = "";
+        },
+                {
+            "adapt_min_version" = "";
+            attrs =             (
+                "FP_INPUT_6"
+            );
+            category = "\U7269\U8054\U7f51\U4e91\U9501\U65b9\U6848";
+            "category_id" = 2000;
+            "connect_mode" = direct;
+            "firmware_comm" = "";
+            "firmware_type" = "";
+            icon = "/product/201901/0720/6009.jpg";
+            id = 6009;
+            lang = "zh-cn";
+            layer = 1;
+            name = "\U7269\U8054\U7f51\U6307\U7eb9\U9501";
+            "product_model" = LK20;
+            sort = 0;
+            tags =             (
+            );
+            version = "";
+        }
+    );
+    status = 200;
+}</mutableString>
                                                     <attributes>
                                                         <color key="NSBackgroundColor" red="0.11799999999999999" green="0.125" blue="0.157" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                         <color key="NSColor" red="0.96862999999999999" green="0.80017000000000005" blue="0.15595000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -753,29 +1306,29 @@
                                     </subviews>
                                 </clipView>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="P3F-1y-C6W">
-                                    <rect key="frame" x="284" y="0.0" width="16" height="325"/>
+                                    <rect key="frame" x="230" y="0.0" width="16" height="274"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
                             <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUP-Zi-Efg">
-                                <rect key="frame" x="300" y="38" width="299" height="325"/>
+                                <rect key="frame" x="246" y="38" width="245" height="274"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="cO7-Tf-3F0">
-                                    <rect key="frame" x="0.0" y="0.0" width="299" height="325"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="245" height="274"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="yuv-Db-wWo">
-                                            <rect key="frame" x="0.0" y="0.0" width="299" height="325"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="245" height="274"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="299" height="325"/>
+                                            <size key="minSize" width="245" height="274"/>
                                             <size key="maxSize" width="480" height="10000000"/>
                                             <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                         </textView>
                                     </subviews>
                                 </clipView>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="twO-mD-r80">
-                                    <rect key="frame" x="283" y="0.0" width="16" height="325"/>
+                                    <rect key="frame" x="229" y="0.0" width="16" height="274"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
@@ -794,13 +1347,15 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="leftScrollView" destination="oUP-U9-dSu" id="lU7-aq-c1b"/>
                         <outlet property="leftView" destination="6Rl-3f-L6m" id="KNP-5F-WC3"/>
+                        <outlet property="rightScrollView" destination="uUP-Zi-Efg" id="SH3-tE-q5x"/>
                         <outlet property="rightView" destination="yuv-Db-wWo" id="fgX-8e-2m5"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="15.5" y="951.5"/>
+            <point key="canvasLocation" x="76" y="686"/>
         </scene>
     </scenes>
 </document>
