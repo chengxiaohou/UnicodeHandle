@@ -710,8 +710,8 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tWO-AG-L1D">
-                                <rect key="frame" x="199" y="2" width="94" height="32"/>
-                                <buttonCell key="cell" type="push" title="编码转换" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="MGI-H8-UbR">
+                                <rect key="frame" x="175" y="2" width="141" height="32"/>
+                                <buttonCell key="cell" type="push" title="Unicode → 中文" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="MGI-H8-UbR">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="13" name=".PingFangSC-Regular"/>
                                 </buttonCell>
